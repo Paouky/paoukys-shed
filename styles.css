@@ -20,21 +20,46 @@ body {
   justify-content: center;
 }
 
+.logo h1 {
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 200;
+    color: #359a35;
+    /*color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: green;*/
+    text-shadow: 0px 0px 12px green;
+    animation: flickering 0.25s 5s 2 ease-out, flickering 0.25s 19s 3 ease-out,
+    flickering 0.25s 22s 2 ease-out, flickering 0.25s 37s 2 ease-out,
+    flickering 0.25s 53s 3 ease-out, flickering 0.25s 82s 3 ease-out,
+    flickering 0.25s 112s 2 ease-out; /* name, duration, delay, iterations, speed */
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 h1, h3, h4 {
   margin-top: 40px;
   color:  #C5C1B8;
 }
 
-h1 {
-  padding: 20px;
-  border-radius: 3px;
+.spell:hover {
+  transition: all .3s ease;
+  transform: scale(1.05) translateY(-2.5%);
 }
 
 .sub-title > h3 {
   border-left: 1px solid green;
   padding: 10px;
-  width: 200px;
 }
 
 p {
@@ -70,7 +95,7 @@ p {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 20px;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #359a35;
 }
 
 .customers-say-items {
@@ -78,8 +103,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow; column wrap;
   flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 .customer-item {
