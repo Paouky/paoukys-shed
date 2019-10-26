@@ -42,7 +42,7 @@ body {
     flickering 0.25s 112s 2 ease-out; /* name, duration, delay, iterations, speed */
 }
 
-@keyframes flickering {
+@-webkit-keyframes flickering {
   0% {
     opacity: 1;
   }
