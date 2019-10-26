@@ -32,7 +32,11 @@ body {
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: green;*/
     text-shadow: 0px 0px 12px green;
-    animation: flickering 0.25s 5s 2 ease-out, flickering 0.25s 19s 3 ease-out,
+    /*animation: flickering 0.25s 5s 2 ease-out, flickering 0.25s 19s 3 ease-out,
+    flickering 0.25s 22s 2 ease-out, flickering 0.25s 37s 2 ease-out,
+    flickering 0.25s 53s 3 ease-out, flickering 0.25s 82s 3 ease-out,
+    flickering 0.25s 112s 2 ease-out;*/
+    -webkit-animation: flickering 0.25s 5s 2 ease-out, flickering 0.25s 19s 3 ease-out,
     flickering 0.25s 22s 2 ease-out, flickering 0.25s 37s 2 ease-out,
     flickering 0.25s 53s 3 ease-out, flickering 0.25s 82s 3 ease-out,
     flickering 0.25s 112s 2 ease-out; /* name, duration, delay, iterations, speed */
@@ -47,9 +51,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 358px) {
+  .logo {
+    text-align: center;
+  }
+}
+
 h1, h3, h4 {
   margin-top: 40px;
-  color:  #C5C1B8;
+  color: #C5C1B8;
 }
 
 .spell:hover {
