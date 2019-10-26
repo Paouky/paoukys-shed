@@ -58,8 +58,8 @@ h1, h3, h4 {
 }
 
 .sub-title > h3 {
-  border-left: 1px solid green;
-  padding: 10px;
+  border-left: 1px solid #359a35;
+  padding: 5px 10px;
 }
 
 p {
