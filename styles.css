@@ -9,19 +9,25 @@ body {
   /*  #252A2F,  #2B3037 */
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.sub-title {
+.titles-container {
+  height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.titles-container > p {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 10%;
+  color: #359a35;
 }
 
 .logo h1 {
-    padding: 20px;
+
+    margin-top: -40px;
     border-radius: 3px;
     font-size: 40px;
     text-transform: uppercase;
@@ -36,10 +42,19 @@ body {
     flickering 0.25s 22s 2 ease-out, flickering 0.25s 37s 2 ease-out,
     flickering 0.25s 53s 3 ease-out, flickering 0.25s 82s 3 ease-out,
     flickering 0.25s 112s 2 ease-out;*/
-    -webkit-animation: flickering 0.25s 5s 2 ease-out, flickering 0.25s 19s 3 ease-out,
-    flickering 0.25s 22s 2 ease-out, flickering 0.25s 37s 2 ease-out,
-    flickering 0.25s 53s 3 ease-out, flickering 0.25s 82s 3 ease-out,
-    flickering 0.25s 112s 2 ease-out; /* name, duration, delay, iterations, speed */
+    -webkit-animation: flickering 0.25s 4s 2 ease-out, flickering 0.25s 17s 3 ease-out,
+    flickering 0.25s 20s 2 ease-out, flickering 0.25s 35s 2 ease-out,
+    flickering 0.25s 49s 3 ease-out, flickering 0.25s 57s 3 ease-out,
+    flickering 0.25s 73s 2 ease-out, flickering 0.25s 90s 2 ease-out,
+    flickering 0.25s 115s 2 ease-out; /* name, duration, delay, iterations, speed */
+
+}
+
+.sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
 }
 
 @-webkit-keyframes flickering {
@@ -50,14 +65,13 @@ body {
     opacity: 0;
   }
 }
-
 @media only screen and (max-width: 358px) {
   .logo {
     text-align: center;
   }
 }
 
-h1, h3, h4 {
+h3, h4 {
   margin-top: 40px;
   color: #C5C1B8;
 }
@@ -76,7 +90,7 @@ p {
   color:  #C5C1B8;
 }
 
-.content {
+.clothes {
   height: 600px;
   display: flex;
   justify-content: center;
